@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  const data = fs.readFileSync('./Andrew Horn Resume.pdf');
+  const data = fs.readFileSync('./andrew horn resume.pdf');
   res.contentType("application/pdf");
   res.send(data);
 })
